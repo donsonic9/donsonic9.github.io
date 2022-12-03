@@ -129,6 +129,14 @@ section {
   border-bottom: 1px solid var(--light-color-2);
 }
 
+input[type="email"]::placeholder {
+  color: #aaa;
+}
+
+input[type="password"]::placeholder {
+  color: #aaa;
+}
+
 input[type="submit"] {
   outline: none;
   border: none;
