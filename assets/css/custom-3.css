@@ -1,0 +1,46 @@
+:root {
+
+  /* Estilo importado a 3 hojas CSS */
+
+  /* 
+  Desde este css podemos controlar los estilos del portfolio parcialmente. 
+  */
+
+  /* Greece blue & lightblue colours (back-1)*/
+  /* --color: #003181;
+  --light-color: #1756d5;
+  --light-color-2: #a4c6f5;
+  --lighter-color: #7da1e3;
+  --almost-white: #e0eaf8;
+  --seccion-clara-back: #3e80f2;
+  --background-img: url("https://www.todofondos.net/wp-content/uploads/1920x1080-Greece-Wallpaper-HD-768x432.jpg"); */
+  /* --background-img: url("https://wallpapercave.com/wp/wp2233413.jpg"); */
+
+
+  /* Fall beige/ocre warm colours (back-2)*/
+  /* --color: #904b19;
+  --light-color: #d56717;
+  --light-color-2: #f5d5a4;
+  --lighter-color: #e3ba7d;
+  --almost-white: #fff2dc;
+  --background-img: url("../images/back-2.jpg"); */
+
+
+  /* Fall red warm colours (back-3)*/
+  /* --color: #901919;
+  --light-color: #d51717;
+  --light-color-2: #f5a4a4;
+  --lighter-color: #e37d7d;
+  --almost-white: #ffdcdc;
+  --background-img: url("../assets/images/back-3.jpg"); */
+
+
+  /* Green forest colours  */
+  --color: #128818;
+  --light-color: #17d530;
+  --light-color-2: #a9f5a4;
+  --lighter-color: #7de37d;
+  --almost-white: #dcffde;
+  --seccion-clara-back: #122916;
+  --background-img: url("https://cdn.create.vista.com/api/media/medium/105701758/stock-photo-beautiful-green-forest?token=");
+}

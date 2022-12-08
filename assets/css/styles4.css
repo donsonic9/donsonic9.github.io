@@ -1,0 +1,619 @@
+/* Variables para ajustar el estilo facilemnte */
+
+@import url('custom-4.css');
+
+:root {
+  /* los colores estan en forma de variable en el import */
+
+  /* neutral standard colors */
+  --darker-color: #1a1a1a;
+  --dark-color: #2d2d2d;
+  --white: #fffdfa;
+  --shadow-1: rgba(0, 0, 0, 0.1);
+  --shadow-2: rgba(0, 0, 0, 0.2);
+  --shadow-3: rgba(0, 0, 0, 0.3);
+  --shadow-4: rgba(0, 0, 0, 0.4);
+  --shadow-6: rgba(0, 0, 0, 0.6);
+}
+
+/* reestablece estilos de navegador y seteamos colores, fondo, y flia de letras */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  background-image: var(--background-img);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+
+  font-family: 'Raleway', sans-serif;
+  transition: all 0.2s ease; 
+}
+
+
+
+/* Estilos generales */
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.seccion-clara {
+  background-color: var(--seccion-clara-back);
+  color: var(--almost-white);
+}
+
+.seccion-glass {
+  color: var(--almost-white);
+  /* glassmorfism */
+  background: var(--shadow-2);
+  border-radius: 10px 10px;
+  box-shadow: 4px 4px 8px 2px var(--shadow-6); 
+  /* 0 4px 30px rgba(0, 0, 0, 0.1) */
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+}
+
+.seccion-glass-h {
+  transition: all 0.3s ease;
+}
+.seccion-glass-h:hover {
+  background: var(--shadow-4);
+  transform: translateY(-2px);
+}
+
+/* .fondo-body {
+  background-image: url("https://images.unsplash.com/photo-1504860708171-19abd233ec3e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80");
+} */
+
+
+
+/* Navbar */
+
+.navbar {
+  /* From https://css.glass */
+  background: var(--shadow-2);
+  border-radius: 0px 0px 5px 5px;
+  box-shadow: 2px 0px 4px 3px var(--shadow-1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+
+.div-ul-nav {
+  display: flex;
+  justify-content: end;
+}
+
+.navbar-brand {
+  color: var(--almost-white);
+  transition: all 0.3s ease;
+}
+
+.navbar-brand:hover {
+  color: var(--white);
+  transform: translateY(-2px);
+}
+
+
+.nav-link {
+  color: var(--almost-white);
+  margin: 2px;
+  transition: all 0.3s ease;
+}
+
+.nav-item:hover .nav-link, .nav-item-drop:hover .btn {
+  color: var(--white);
+  background-color:var(--shadow-1);
+  box-shadow: 0 0 2px 2px var(--shadow-1);
+  border-radius: 5px;
+  transform: translateY(-2px);
+  border-bottom: 1px solid var(--white);
+}
+
+.nav-item-drop .nav-link {
+  font-size: 1.5rem;
+  padding:0 30px;
+  
+}
+
+.nav-item-drop .btn {
+  color: var(--almost-white);
+  font-size: 1.5rem;
+  outline: none;
+}
+
+.dropdown-item {
+  color: var(--almost-white);
+  border-radius: 0px;
+  outline: none;
+}
+
+.dropdown-item:hover {
+  color: var(--white);
+  
+}
+
+.dropdown-menu {
+  background-color:var(--shadow-4);
+  outline: none;
+}
+
+.btn-group .btn {
+  border: none;
+  outline: none;
+}
+
+
+
+/* Hero section */
+
+.hero {
+  min-height: 450px;
+  
+  text-align: center;
+  margin-top: 90px;
+}
+
+.hero-principal {
+  color: var(--almost-white);
+  padding: 3rem 3.1rem;
+  max-width: 70%;
+  margin: 0 auto;
+  margin-bottom: 30vh;
+  margin-top: 10vh;
+  /* glassmorfism */
+  background: var(--shadow-2);
+  border-radius: 10px 10px;
+  box-shadow: 4px 4px 8px 2px var(--shadow-6), 0 4px 30px var(--shadow-1);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+
+  transition: all 0.3s ease;
+}
+
+.hero-principal:hover {
+  background: var(--shadow-3);
+  box-shadow: 2px 6px 8px 2px var(--shadow-6), 0 4px 30px var(--shadow-1);
+  transform: translateY(-2px);
+
+}
+
+.hero-image-profile {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin: 20px 20px 40px 20px;
+}
+
+/* Sobre mi */
+
+.div-id-specific {
+  margin-bottom: 80px;
+}
+
+.sobre-mi {
+  min-height: 400px;
+  /* margin-top: 50px; */
+}
+
+.sobre-mi-cont {
+  margin: 60px 0;
+}
+
+.sobre-mi-image {
+  max-height: 500px;
+  margin: 20px 0;
+}
+
+.sobre-mi-title {
+  font-size: 3rem;
+  font-weight: 400;
+  color: var(--color);
+  margin: 20px 0;
+  text-align: center;
+}
+
+.sobre-mi-description {
+  /* color: var(--dark-color); */
+  font-size: 1.1rem;
+  padding-bottom: 20px;
+}
+
+
+/* Experiencia */
+
+.exp {
+  min-height: 450px;
+  padding: 40px 0;
+  display: flex;
+  justify-content: center;
+  
+}
+
+.exp .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.exp-cont {
+  margin: 10px 10px 20px 10px;
+}
+
+.exp-title {
+  font-size: 3rem;
+  font-weight: 400;
+  color: var(--almost-white);
+  margin: 40px 0;
+  padding: 20px;
+}
+
+.exp-image {
+  margin: 10px;
+  width: 1.2in;
+  height: 1in;
+}
+
+.exp-info {
+  margin: 10px 0;
+}
+
+.exp-info h3 {
+  padding: 0 10px;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.exp-info h5 {
+  padding: 0 14px;
+}
+
+.exp-info p {
+  padding: 10px;
+  font-style: italic;
+}
+
+/* Educacion */
+
+.edu {
+  min-height: 450px;
+  margin: 20px 0;
+  padding: 40px 0;
+}
+
+.edu .cv {
+  text-decoration: none;
+  max-width: 200px;
+  padding: 10px;
+  color: var(--white);
+  background-color: rgb(49, 73, 255);
+  border-radius: 10px;
+  transition: all 0.2s ease-in-out;
+}
+
+.edu .cv:hover {
+  background-color: rgb(69, 193, 255);
+}
+
+.div-title {
+  margin: 30px 10px;
+}
+
+.inst-title {
+  margin: 0;
+}
+
+
+.accordion-item, .accordion-header, .accordion-button, .accordion-body {
+  background-color: var(--light-color-2);
+  transition: all 0.3s ease;
+}
+
+.accordion-button:hover {
+  background-color:var(--shadow-4);
+  color: var(--almost-white);
+}
+
+.accordion-body {
+  text-align: center;
+  background-color: var(--lighter-color);
+}
+
+/* Imagen del certificado */
+.accordion-certificate {
+  width: 1.2in;
+  height: 0.8in;
+  border: 4px outset goldenrod;
+  filter: brightness(70%);
+  transition: all 0.3s ease;
+}
+
+.accordion-certificate:hover {
+  transform: translateY(-2px);
+  filter: brightness(100%);
+}
+
+.accordion-body h4, .accordion-body p {
+  color: var(--almost-white);
+  text-align: left;
+  margin: 10px 5px;
+}
+
+.course-button {
+  text-decoration: none;
+  color: var(--almost-white);
+  background-color:var(--shadow-2);
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.course-button:hover {
+  color: var(--white);
+  background-color:var(--shadow-6);
+  padding: 12px;
+  box-shadow: 0 0 2px 2px var(--shadow-1);
+  border-bottom: 1px solid var(--white);
+}
+
+.logo-inst-solo {
+  transform: scale(0.6);
+}
+
+
+/* Habilidades */
+
+/* Los containers tienen las mismas clases que que usan en 'Experiencia', ya que el estilo es el mimso. */
+
+.hab .exp {
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.hab-div-cont h3 {
+  margin: 0 5vw;
+  padding: 10px;
+  font-size: 30px;
+  color: var(--white);
+  background-color: var(--shadow-3);
+}
+
+.icon-container {
+  margin: 10px;
+}
+
+.icon-container:hover {
+  color: var(--white);
+}
+
+/* Iconos de habilidades */
+
+.hab .fa-brands, .hab .fa-solid {
+  font-size: 60px;
+  margin: 10px;
+  padding: 10px;
+}
+
+.icon-container p {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.language-flag {
+  width: 80px;
+  height: 70px;
+}
+
+
+
+/* Proyectos */
+
+.proyectos {
+  padding: 40px 0;
+  margin: 40px 0;
+}
+
+.proyectos-cont {
+  padding: 20px;
+  margin: 10px;
+}
+
+.proyectos-cont p, .proyectos-cont h3 {
+  /* color: var(--dark-color); */
+  margin: 10px 0 10px 10px;
+  text-align: left;
+}
+
+.overlay-relative {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.overlay-relative img {
+  height: 100%;
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  display: block;
+  transition: all 0.3s ease;
+}
+
+.overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+
+  display: none;
+
+  transition: all 0.3s ease;
+}
+
+.overlay a {
+  font-size: 30px;
+  font-weight: 600;
+  padding: 300px;
+  text-decoration: none;
+  color: var(--almost-white);
+  background-color: var(--shadow-4);
+
+}
+
+.overlay-relative:hover img {
+  filter: brightness(40%);
+  transform: scale(1.2);
+  transition: all 0.3s ease;
+}
+
+.overlay-relative:hover .overlay {
+  display: flex;
+}
+
+
+/* Footer / Contacto */
+
+footer {
+  padding-top: 120px;
+  margin-top: 120px;
+}
+
+.contacto-lema {
+  font-family: 'Dancing Script', cursive;
+  font-size: 2.7rem;
+  font-weight: 500;
+  padding: 20px;
+  margin-bottom: 60px;
+  /* background-color: var(--shadow-2); */
+}
+
+.contacto-preg {
+  font-size: 1.5rem;
+  font-weight: 500;
+  padding: 20px;
+  margin-bottom: 100px;
+  background-color: var(--shadow-2);
+}
+
+.iconos-redes-sociales {
+  margin-bottom: 60px;
+}
+
+.iconos-redes-sociales a {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  margin: 10px;
+  /* border: 1px solid var(--almost-white); */
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+.iconos-redes-sociales a:hover {
+  background-color: var(--shadow-4);
+  color: var(--white);
+  transform: translateY(-4px);
+  border-bottom: 1px solid var(--white);
+  box-shadow: 0 0 2px 2px var(--shadow-1);
+}
+
+.iconos-redes-sociales i {
+  color: var(--almost-white);
+  font-size: 2rem;
+  transition: all 0.3s ease-in;
+}
+
+/* .iconos-redes-sociales a:hover i {
+  font-size: 2.2rem;
+} */
+
+.derechos-de-autor {
+  font-size: 15px;
+  color: var(--lighter-color);
+  padding: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Adaptable (responsive) ..........................................................................*/
+
+/* resizing logo navbar for screen size less than 357px */
+@media screen and (max-width: 357px) {
+  .logo-img-navbar {
+    transform: scale(0.8);
+  }
+
+  .texto-logo-nav {
+    font-size: 0.8rem;
+  }
+}
+
+/* resizing logo navbar & profile image for screen size less than 311px */
+@media screen and (max-width: 311px) {
+  .logo-img-navbar {
+    transform: scale(0.6);
+  }
+
+  .texto-logo-nav {
+    font-size: 0.6rem;
+  }
+
+  .hero-image-profile {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 10px;
+  }
+}
+
+/* centrar los navbar items for screen size less than 767px */
+@media screen and (max-width: 767px) {
+  .div-ul-nav {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+/* resizing logo lemon for screen sizes less than 400px; */
+@media screen and (max-width: 400px) {
+  .logo-inst-lemon {
+    width: 300px;
+    height: 40px;
+  }
+}
+
+/* resizing logo lemon for screen sizes less than 300px; */
+@media screen and (max-width: 300px) {
+  .logo-inst-lemon {
+    width: 250px;
+    height: 30px;
+  }
+}
+
+
+
