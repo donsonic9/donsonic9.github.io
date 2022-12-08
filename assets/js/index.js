@@ -27,23 +27,3 @@ colorButton.addEventListener("click", ()=>{
   // console.log(counter);
 
 });
-
-// logButton.addEventListener("click", ()=>{
-
-//   if (counter == 0) {
-//     cssChangelo.setAttribute("href", "assets/css/login2.css");
-//     counter = 1;
-//   } else if (counter == 1) {
-//     cssChangelo.setAttribute("href", "assets/css/login3.css");
-//     counter = 2;
-//   } else if (counter == 2) {
-//     cssChangelo.setAttribute("href", "assets/css/login4.css");
-//     counter = 3;
-//   } else if (counter == 3) {
-//     cssChangelo.setAttribute("href", "assets/css/login.css");
-//     counter = 0;
-//   }
-
-//   // console.log(counter);
-
-// });
