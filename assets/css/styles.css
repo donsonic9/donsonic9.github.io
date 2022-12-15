@@ -444,6 +444,10 @@ h1 {
   text-align: left;
 }
 
+.proyectos-cont p {
+  margin-bottom: 40px;
+}
+
 .overlay-relative {
   position: relative;
   overflow: hidden;
