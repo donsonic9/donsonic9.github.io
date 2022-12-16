@@ -62,7 +62,7 @@
                 <ul class="dropdown-menu dropdown-menu-end seccion-glass">
                   <li><a href="login.html" class="dropdown-item seccion-glass-h">Log In</a></li>
                   <li><a href="signUp.html" class="dropdown-item seccion-glass-h">Sign Up</a></li>
-                  <!-- <li><a href="#" class="dropdown-item seccion-glass-h disabled">Log Out</a></li> -->
+                  <li id="hero" class="dropdown-item seccion-glass-h">Change Theme</li>
                 </ul>
               </div>
           </li>
@@ -73,13 +73,15 @@
     </div>
   </nav>
 
+  <!-- Div para volver arriba con el boton del footer -->
+  <div id="upp"></div>
+
   <!-- Hero section -->
   <section class="hero d-flex align-items-sm-stretch">
-    <div class="hero-principal d-flex flex-column justify-content-center align-items-center" id="hero">
+    <div class="hero-principal d-flex flex-column justify-content-center align-items-center">
       <img class="hero-image-profile" src="assets/images/profile-picture-4.jpg" alt="Imagen principal de Alexander Repollo" title="Imagen principal de Alexander Repollo">
       <h1>Hola! soy Alexander Repollo!</h1>
       <h2>Estudiante de desarrollo web, te invito a conocerme!</h2>
-      <h6><i>Click en la tarjeta para cambiar estilos</i></h6>
     </div>
   </section>
   
@@ -455,7 +457,7 @@
         <div class="exp-cont row d-flex justify-content-center align-items-center text-center">
           <div class="icon-container col-12 col-sm-6 col-md-2 seccion-glass-h">
             <img class="language-flag" src="assets/images/ES-Spain-Flag-icon.png" alt="Spain flag">
-            <p> Espanol </p>
+            <p> Español </p>
           </div>
           <div class="icon-container col-12 col-sm-6 col-md-2 seccion-glass-h">
             <img class="language-flag" src="assets/images/GB-United-Kingdom-Flag-icon.png" alt="England flag">
@@ -532,6 +534,10 @@
           <i class="bi bi-envelope"></i>
         </a>
       </div>
+    </div>
+    <!-- Boton para volver al inicio de la página -->
+    <div class="boton-up iconos-redes-sociales">
+      <a href="#upp" title="Click para volver al inicio"><i class="bi bi-arrow-up-circle"></i></a>
     </div>
     <div class="derechos-de-autor">Creado por Alexander Repollo 2022 &#169;</div>
   </footer>
