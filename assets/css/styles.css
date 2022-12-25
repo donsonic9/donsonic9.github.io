@@ -37,6 +37,10 @@ body {
 
 /* Estilos generales */
 
+html {
+  scroll-behavior: smooth;
+}
+
 section {
   display: flex;
   flex-direction: column;
@@ -97,7 +101,9 @@ h1 {
 
 .navbar-brand {
   color: var(--almost-white);
+  margin: 0;
   transition: all 0.3s ease;
+  cursor: pointer;
 }
 
 .navbar-brand:hover {

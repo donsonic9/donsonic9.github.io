@@ -31,6 +31,7 @@ body {
   background-attachment: fixed;
 
   font-family: 'Raleway', sans-serif;
+  transition: all 1s ease;
 }
 
 section {
@@ -69,6 +70,8 @@ section {
 
 .navbar-brand {
   color: var(--almost-white);
+  margin: 0;
+  cursor: pointer;
   transition: all 0.3s ease;
 }
 
