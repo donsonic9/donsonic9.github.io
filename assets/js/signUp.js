@@ -1,5 +1,5 @@
 
-// JS perteneciente al index.html
+// JS perteneciente al login.html
 
 let cssChange = document.getElementById("csslink");
 let colorButton = document.getElementById("hero");
@@ -20,12 +20,5 @@ colorButton.addEventListener("click", ()=>{
     cssChange.setAttribute("href", "assets/css/custom-1.css");
     counter = 0;
   }
+  
 });
-
-// como cambiar de tema
-
-alert(`
-                                  -  Bienvenido a mi Web! -
-
-Consejo rápido: click en "#YoProgramo" para cambiar los estilos de la página
-`);
