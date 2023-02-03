@@ -170,6 +170,11 @@ h1 {
 
 /* Hero section */
 
+.cartel-aviso .alert {
+  transform: translateY(120px);
+  text-align: center;
+}
+
 .hero {
   min-height: 450px;
   

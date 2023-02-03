@@ -22,10 +22,4 @@ colorButton.addEventListener("click", ()=>{
   }
 });
 
-// como cambiar de tema
 
-alert(`
-                                  -  Bienvenido a mi Web! -
-
-Consejo rápido: click en "#YoProgramo" para cambiar los estilos de la página
-`);
